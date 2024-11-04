@@ -4,7 +4,6 @@ SELECT
     *
 FROM
     customers_orders;
-
 END;
 
 -- Execuite query to retrieve all data from the customers_orders table.
@@ -21,7 +20,6 @@ FROM
     customers_orders
 WHERE
     customer_email = @customerEmail;
-
 END;
 
 -- Execute the GetOrdersByEmail procedure with a specific email to retrieve matching records.
@@ -35,7 +33,6 @@ FROM
     customers_orders
 WHERE
     product_id = @product_id;
-
 END;
 
 -- Execute the GetProductId procedure with an integer value for product_id.
@@ -48,7 +45,6 @@ FROM
     customers_orders
 WHERE
     price > 1000;
-
 END;
 
 EXEC GetAllPrise;
@@ -61,7 +57,6 @@ FROM
     customers_orders
 WHERE
     price < @price;
-
 END;
 
 -- Execute the stored procedure.

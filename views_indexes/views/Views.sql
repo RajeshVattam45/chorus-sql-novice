@@ -42,19 +42,6 @@ FROM
 -- Query to delete the view.
 DROP VIEW user_info_details;
 
--- View to Hide Sensitive Information.
-CREATE VIEW display_limited_details AS
-SELECT
-    id,
-    user_name
-FROM
-    user;
-
-SELECT
-    *
-FROM
-    display_limited_details;
-
 -- Create a view to display all information for the user with user_name 'rajesh'.
 CREATE VIEW [User Rajesh] AS
 SELECT

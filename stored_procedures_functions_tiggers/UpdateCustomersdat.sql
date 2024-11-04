@@ -4,6 +4,7 @@ CREATE PROCEDURE UpdatacCustomersData
 @customer_name NVARCHAR(30),
 @customer_email NVARCHAR(30)
 AS BEGIN
+
 -- Update the customer record in the customers_table where the ID matches.
 UPDATE customers_table
 SET

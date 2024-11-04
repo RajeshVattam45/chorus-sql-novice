@@ -12,7 +12,6 @@ INSERT INTO
     customers_table (customer_name, customer_email)
 VALUES
     (@customer_name, @customer_email);
-
 END;
 
 -- Execute the stored procedure with sample data.
