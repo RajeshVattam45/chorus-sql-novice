@@ -1,6 +1,6 @@
 -- Note: Execute this query if the table does not exist.
 CREATE TABLE customers_table (
-    id INT IDENTITY(1, 1) PRIMARY KEY NOT NULL,
+    id INT IDENTITY(1, 1) PRIMARY KEY,
     customer_name VARCHAR(30) NOT NULL,
     customer_email VARCHAR(30) NOT NULL
 );

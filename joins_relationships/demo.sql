@@ -1,11 +1,11 @@
 CREATE TABLE demo_one (
-    id INT IDENTITY(1, 1) NOT NULL PRIMARY KEY,
+    id INT IDENTITY(1, 1) PRIMARY KEY,
     name VARCHAR(30) NOT NULL,
     type VARCHAR(30) NOT NULL
 );
 
 CREATE TABLE demo_two (
-    customer_id INT IDENTITY(1, 1) NOT NULL PRIMARY KEY,
+    customer_id INT IDENTITY(1, 1) PRIMARY KEY,
     customer_name VARCHAR(30) NOT NULL,
     customer_mail VARCHAR(30) NOT NULL,
     id INT,

@@ -1,6 +1,6 @@
 -- Query to create index table.
 CREATE TABLE index_table (
-    id INT IDENTITY(1, 1) NOT NULL PRIMARY KEY,
+    id INT IDENTITY(1, 1) PRIMARY KEY,
     name VARCHAR(30) NOT NULL,
     role VARCHAR(30) NOT NULL,
     type VARCHAR(30) NOT NULL

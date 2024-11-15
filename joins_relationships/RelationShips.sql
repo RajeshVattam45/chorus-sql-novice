@@ -1,11 +1,11 @@
 -- One-to-One Relationship.
 CREATE TABLE student (
-    id INT IDENTITY(1, 1) NOT NULL PRIMARY KEY,
+    id INT IDENTITY(1, 1) PRIMARY KEY,
     student_name VARCHAR(30) UNIQUE NOT NULL
 );
 
 CREATE TABLE subjects (
-    id INT IDENTITY(1, 1) NOT NULL PRIMARY KEY,
+    id INT IDENTITY(1, 1) PRIMARY KEY,
     maths INT NOT NULL,
     chemistry INT NOT NULL,
     physics INT NOT NULL,
@@ -39,21 +39,21 @@ ORDER BY
 -- One-To-Multiple Relationships.
 -- Table for storing customer information.
 CREATE TABLE customers_table (
-    id INT NOT NULL IDENTITY(1, 1) PRIMARY KEY,
+    id INT IDENTITY(1, 1) PRIMARY KEY,
     customer_name VARCHAR(30),
     customer_email VARCHAR(30) NOT NULL UNIQUE
 );
 
 -- Table for storing product information.
 CREATE TABLE customers_products (
-    id INT IDENTITY(1, 1) NOT NULL PRIMARY KEY,
+    id INT IDENTITY(1, 1) PRIMARY KEY,
     product_id INT NOT NULL UNIQUE,
     product_name VARCHAR(30) NOT NULL
 );
 
 -- Table for storing orders with foreign key relationships.
 CREATE TABLE customers_orders (
-    id INT NOT NULL IDENTITY(1, 1) PRIMARY KEY,
+    id INT IDENTITY(1, 1) PRIMARY KEY,
     order_id INT NOT NULL UNIQUE,
     price INT NOT NULL,
     product_id INT,

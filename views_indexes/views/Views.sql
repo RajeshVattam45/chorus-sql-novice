@@ -1,6 +1,6 @@
 -- Note: create the users table if it does not already exist.
 CREATE TABLE users (
-    id INT IDENTITY(1, 1) NOT NULL PRIMARY KEY,
+    id INT IDENTITY(1, 1) PRIMARY KEY,
     user_name VARCHAR(30) NOT NULL,
     user_email VARCHAR(30) NOT NULL,
     user_number INT NOT NULL,
