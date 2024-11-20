@@ -28,3 +28,20 @@ VALUES
     ('Lokesh', 'lokesh.v@gmail.com', 2),
     ('Jhon', 'jhon.w@gmail.com', 3),
     ('Jerry', 'jerry.h@gmail.com', 4);
+
+-- Query to add extra clomn to demo_one table.
+ALTER TABLE demo_one 
+ADD user_id INT;
+
+ALTER TABLE demo_one
+ADD CONSTRAINT fk_demo_one_user_id
+FOREIGN KEY (user_id) REFERENCES table_one(user_id);
+
+
+-- Query to add extra clomn to demo_one table.
+ALTER TABLE demo_two 
+ADD user_id INT;
+
+ALTER TABLE demo_two
+ADD CONSTRAINT fk_demo_two_user_id
+FOREIGN KEY (user_id) REFERENCES table_one(user_id);

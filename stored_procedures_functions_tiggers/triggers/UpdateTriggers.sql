@@ -36,3 +36,16 @@ WHERE id = 1;
 
 -- Query to drop the table.
 DROP TRIGGER update_trigger;
+
+-- Create a trigger to log updates on `triggers_table`.
+CREATE TRIGGER audit_table_updates ON triggers_table
+AFTER UPDATE
+AS
+BEGIN
+    PRINT 'Table has been modified';
+END;
+
+-- Test the trigger.
+UPDATE triggers_table
+SET name = 'Hello'
+WHERE id = 2;
